@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+{% unless page.content == '' %}
+{{ content }}
+{% endunless %}
+
+<h3>Peer-reviewed Journal Publications</h3>
+
+<ul class="publications-list">
+    {% for publication in site.publications %}
+    {% if publication.paper_cat == "journal" %}
+    <li>
+        {% include publication-item.html %}
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+<h3>Peer-reviewed Conference Publications</h3>
+
+<ul class="publications-list">
+    {% for publication in site.publications %}
+    {% if publication.paper_cat == "conference" %}
+    <li>
+        {% include publication-item.html %}
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+

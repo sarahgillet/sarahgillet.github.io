@@ -1,0 +1,22 @@
+<div>
+    {{publication.authors}} ({{publication.year}}).
+    {% if publication.url_pub %}
+    <a href={{publication.url_pub}} target="_blank">
+        {% endif %}
+        {{publication.title}}.
+        {% if publication.url_pub %}
+    </a>
+    {% endif %}
+    In <i>{{publication.booktitle}}</i>.
+    {% if publication.conference_short %}
+    (<b>{{publication.conference_short}}</b>)
+    {% endif %}
+    {% if publication.pdf %} <a href={{publication.pdf}} target="_blank">PDF</a>{% endif %}
+    {% if publication.bibtex %} <a href={{publication.bibtex}} target="_blank">Bibtex</a>{% endif %}
+    {% if publication.video_description %} <br />{{publication.video_description}}
+    <a href={{publication.video}} target="_blank">Video</a>
+    {% else %}
+    {% if publication.video %} <a href={{publication.video}} target="_blank">Video</a>{% endif %}
+    {% endif %}
+    <br /><br />
+</div>

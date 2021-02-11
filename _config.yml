@@ -1,0 +1,50 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Setup
+title:            Sarah Gillet
+image:            /assets/img/sarah.JPG
+cv:               /assets/pdf/CV_SarahGillet.pdf
+twitter:          https://twitter.com/sarahmgillet
+linkedin:         https://www.linkedin.com/in/sarah-gillet-735382138/
+scholar:          https://scholar.google.se/citations?user=tbRSHkIAAAAJ&hl=en
+tagline:          'Sarah Gillet'
+description:      'Developing autonomous robots that shape human-human interactions.'
+url:              https://fongandrew.github.io
+baseurl:          '/'
+                  # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
+posts_on_home:    4
+
+author:
+  name:           'Sarah Gillet'
+  url:            https://twitter.com/sarahmgillet
+
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+# Sidebar link settings
+sidebar_home_link:  false
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
+
+collections:
+    publications:
+        output: true
+    bibtex:
+        output: true
+        permalink: /bibtex/:title
+    research:
+        output: true

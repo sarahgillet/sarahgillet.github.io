@@ -1,0 +1,20 @@
+---
+layout: page
+---
+
+<div class="content">
+    {% include pagination-newer.html %}
+    <div class="row">
+        <div class="col">
+            {{ content }}
+            <div class="row cards mt-10">
+                {% for research in site.research %}
+                <div class="col-lg-6">
+                    {% include card_research.html %}
+                </div>
+                {% endfor %}
+             </div>
+        </div>
+            </div>
+</div>
+

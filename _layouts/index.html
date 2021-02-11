@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="content">
+    {% include pagination-newer.html %}
+
+    {{ content }}
+        <!-- div class="row">
+    <div class="col-lg-12"> <!--</div>-md-10 col-lg-8 mx-auto">-->
+        <!-- div class="row">
+        <div class="col">
+            {{ content }}
+        </div>
+    </!--div>
+    -->
+        <div class="col-xl-12">
+            {% if site.posts_on_home > 0 %}
+            <div class="row cards mt-4">
+                {% for post in site.posts limit:site.posts_on_home %}
+                <div class="col-lg-4">
+                    {% include card.html %}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <!--{% for post in paginator.posts %}
+    <article class="post-body">
+      <h2 class="post-title">
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      {% include post-meta.html post=post %}
+
+      {% if post.excerpt %}
+        {{ post.excerpt }}
+      {% else %}
+        {{ post.content }}
+      {% endif %}
+
+      {% if post.excerpt %}
+        {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
+        {% capture content_words %}
+          {{ post.content | number_of_words }}
+        {% endcapture %}
+        {% capture excerpt_words %}
+          {{ post.excerpt | number_of_words }}
+        {% endcapture %}
+
+        {% if content_words != excerpt_words %}
+          <a href="{{ post.url | relative_url }}">More &hellip;</a>
+        {% endif %}
+      {% endif %}
+    </article>
+    {% endfor %}-->
+        {% include pagination-older.html %}
+        </!--div>
