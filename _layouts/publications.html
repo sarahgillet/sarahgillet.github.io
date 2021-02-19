@@ -21,7 +21,8 @@ layout: page
 <h3>Peer-reviewed Conference Publications</h3>
 
 <ul class="publications-list">
-    {% for publication in site.publications %}
+    {% assign sorted = site.publications | sort: 'date' | reverse %}
+    {% for publication in sorted %}
     {% if publication.paper_cat == "conference" %}
     <li>
         {% include publication-item.html %}

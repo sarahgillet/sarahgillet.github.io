@@ -1,6 +1,6 @@
 ---
 title: Robot Gaze Can Mediate Participation Imbalance in Groups with Different Skill Levels
-date: 2021-01-31 17:27:15 +0200
+date: 2021-02-08 17:27:15 +0200
 categories: [News, Publications, Robots in Groups, Research]
 paper_cat: conference
 authors: <b>Sarah Gillet*</b>, Ronald Cumbal*, Andr&eacute; Pereira, Jos&eacute; Lopes, Olov Engwall, Iolanda Leite

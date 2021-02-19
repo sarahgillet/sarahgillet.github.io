@@ -11,7 +11,6 @@ linkedin:         https://www.linkedin.com/in/sarah-gillet-735382138/
 scholar:          https://scholar.google.se/citations?user=tbRSHkIAAAAJ&hl=en
 tagline:          'Sarah Gillet'
 description:      'Developing autonomous robots that shape human-human interactions.'
-url:              https://fongandrew.github.io
 baseurl:          '/'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.

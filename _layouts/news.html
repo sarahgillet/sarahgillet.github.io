@@ -2,6 +2,14 @@
 layout: page
 ---
 
+{% if page.publication_url %}
+ {% for publication in site.publications %}
+    {% if publication.id == page.publication_url %}
+         {% include publication-item.html %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
 {% unless page.content == '' %}
 {{ content }}
 {% endunless %}
