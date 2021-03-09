@@ -13,3 +13,7 @@ layout: page
 {% unless page.content == '' %}
 {{ content }}
 {% endunless %}
+
+{% if page.poster %}
+    <a href={{page.poster}} target="_blank"> Find the poster here</a>
+{% endif %}
