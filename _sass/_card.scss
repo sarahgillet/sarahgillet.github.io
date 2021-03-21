@@ -13,7 +13,7 @@
   margin-bottom: $grid-gutter-width;
   min-width: 100%; // Use allowed width even if content is smaller
 
-  .card-img-top {
+  /*.card-img-top {
     height: 50px;
     max-height: 1%;
     object-fit: scale-down;
@@ -22,7 +22,7 @@
   .card-subtitle {
     color: $gray-600;
     margin-bottom: 0.5rem;
-  }
+  }*/
 
   a:hover {
     text-decoration: none;

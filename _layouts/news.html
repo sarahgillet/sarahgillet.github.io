@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-
+<p style="color: gray">
 {% if page.publication_url %}
  {% for publication in site.publications %}
     {% if publication.id == page.publication_url %}
@@ -9,8 +9,10 @@ layout: page
     {% endif %}
   {% endfor %}
 {% endif %}
+</p>
 
 {% unless page.content == '' %}
+<br />
 {{ content }}
 {% endunless %}
 

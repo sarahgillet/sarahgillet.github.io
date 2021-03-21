@@ -1,11 +1,10 @@
-<div>
-    {{publication.authors}} ({{publication.year}}).
+{{publication.authors}} ({{publication.year}}).
     {% if publication.url_pub %}
-    <a href={{publication.url_pub}} target="_blank">
-        {% endif %}
-        {{publication.title}}.
-        {% if publication.url_pub %}
-    </a>
+<a href={{publication.url_pub}} target="_blank">
+    {% endif %}
+    {{publication.title}}.
+    {% if publication.url_pub %}
+</a>
     {% endif %}
     In <i>{{publication.booktitle}}</i>.
     {% if publication.conference_short %}
@@ -14,10 +13,9 @@
     {% if publication.pdf %} <a href={{publication.pdf}} target="_blank">PDF</a>{% endif %}
     {% if publication.bibtex %} <a href={{publication.bibtex}} target="_blank">Bibtex</a>{% endif %}
     {% if publication.video_description %} <br />{{publication.video_description}}
-    <a href={{publication.video}} target="_blank">Video</a>
+<a href={{publication.video}} target="_blank">Video</a>
     {% else %}
     {% if publication.video %} <a href={{publication.video}} target="_blank">Video</a>{% endif %}
     {% endif %}
     {% if publication.supp_mat_video %} <br /> Supplemental material: <a href={{publication.supp_mat_video}} target="_blank">Video</a>{% endif %}
-    <br /><br />
-</div>
+    {% if publication.extra %} <br /> {{publication.extra_text}} <a href={{publication.extra}} target="_blank">PDF</a>{% endif %}
