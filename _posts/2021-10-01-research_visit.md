@@ -1,5 +1,5 @@
 ---
-title: Research visit at the Interactive Machines Group lead by Marynel V&aacute;zquez
+title: Research visit at the Interactive Machines Group led by Marynel V&aacute;zquez
 date: 2021-10-25 09:00:15 +0200
 background: /assets/img/shutter.png
 categories: [News, Publications, Robots in Groups]
