@@ -4,7 +4,7 @@ title: CV &amp; Contact
 ---
 ### Curriculum vitae
 
-[Download the latest version of my CV](/assets/pdf/CV_SarahGillet.pdf) (last updated January 5, 2022).
+[Download the latest version of my CV](/assets/pdf/CV_SarahGillet.pdf) (last updated June 21, 2022).
 
 ### Contact information
 
