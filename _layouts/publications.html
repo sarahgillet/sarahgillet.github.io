@@ -5,6 +5,17 @@ layout: page
 {% unless page.content == '' %}
 {{ content }}
 {% endunless %}
+<h3>Contributions to books</h3>
+
+<ul class="publications-list">
+    {% for publication in site.publications %}
+    {% if publication.paper_cat == "book" %}
+    <li>
+        {% include publication-item.html %}<br /><br />
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
 
 <h3>Peer-reviewed Journal Publications</h3>
 
