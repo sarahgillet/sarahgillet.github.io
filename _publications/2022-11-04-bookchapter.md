@@ -8,5 +8,6 @@ booktitle: "The Handbook on Socially Interactive Agents: 20 Years of Research on
 year: 2022
 url_pub: https://doi.org/10.1145/3563659.3563665
 ---
+The preprint can be downloaded from the book's webpage at <url>https://sociallyinteractiveagents.org/VOLUME-2/ </url>
 
 
