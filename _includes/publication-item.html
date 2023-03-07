@@ -18,4 +18,6 @@
     {% if publication.video %} <a href={{publication.video}} target="_blank">Video</a>{% endif %}
     {% endif %}
     {% if publication.supp_mat_video %} <br /> Supplemental material: <a href={{publication.supp_mat_video}} target="_blank">Video</a>{% endif %}
+    {% if publication.supp_mat %} <br /> Supplemental material: <a href={{publication.supp_mat}} target="_blank">Resources</a>{% endif %}
     {% if publication.extra %} <br /> {{publication.extra_text}} <a href={{publication.extra}} target="_blank">PDF</a>{% endif %}
+    {% if publication.pre_print %} <br /><a href={{publication.pre_print}} target="_blank">Link to Pre-print</a>{% endif %}
