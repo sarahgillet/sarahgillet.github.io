@@ -17,7 +17,7 @@ baseurl:          '/'
                   # If you want to move just the blog index pages but keep
                   # other pages at root, see the paginate_path and
                   # sidebar_blog_link below.
-posts_on_home:    4
+posts_on_home:    3
 
 author:
   name:           'Sarah Gillet'
