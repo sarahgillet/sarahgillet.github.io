@@ -1,13 +1,13 @@
 ---
-title: Defence upcoming
-date: 2024-07-15 17:27:15 +0200
+title: Thesis defended!
+date: 2024-09-05 17:27:15 +0200
 background: /assets/img/thesis.png
 categories: [Posts, News, Robots in Groups]
 layout: news
-description: <p>I will defend my thesis on September 5th, 2 p.m. I would be excited if you would join the defence or peak into my thesis. Find the details in this news post.</p>
+description: <p>I defended my thesis titled <em>Computational approaches to interaction-shaping robotics</em>.</p>
 ---
 
-On September 5th, 2024, 2 p.m. Stockholm time, I will defend my doctoral thesis title <em>Computational approaches to interaction-shaping robotics</em>. 
+On September 5th, 2024, I defended my doctoral thesis titled <em>Computational approaches to interaction-shaping robotics</em>. 
 
 Details: 
 
@@ -16,8 +16,6 @@ Details:
 **When**: Thursday, September 5, 2024, at 2pm 
 
 **Where**: F3 (Flodis), Lindstedtsvägen 26 & 28, Stockholm 
-
-**Webinar/Zoom Link**: [https://kth-se.zoom.us/j/69226775403](https://kth-se.zoom.us/j/69226775403)
 
 **Supervisor**: Associate Professor Iolanda Leite (KTH)
 
