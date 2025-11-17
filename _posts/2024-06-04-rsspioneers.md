@@ -6,6 +6,7 @@ categories: [Posts, News, Robots in Groups]
 layout: news
 description: <p>My research statement was accepted at the highly competitive <a href="https://sites.google.com/view/rsspioneers2024/" target="_blank">RSS Pioneers Workshop</a> '24.</p>
 poster: /assets/pdf/poster_pioneers.pdf
+excerpt: My research statement got accepted to <a href="https://sites.google.com/view/rsspioneers2024/" target="_blank">RSS Pioneers '24</a>.
 ---
 
 My research statement titled <em>A computational lense to interaction-shaping robotics</em> was accepted to 

@@ -5,6 +5,7 @@ background: /assets/img/blossoms.jpg
 categories: [News, Robots]
 description: 
 layout: news
+excerpt: We built three Blossom robots as a joined effort between Uppsala and KTH.
 ---
 
-In a joined building day, we build three [Blossom robots](http://guyhoffman.com/blossom-handcrafted-soft-social-robot/). Check [our github](https://github.com/sarahgillet/blossom-public/wiki) to find European distributors and the changes we made while crafting the robot. Big thanks to [USC Interaction Lab](https://github.com/interaction-lab) for organizing the worldwide workshop on building Blossom robots. 
+In a joined building day, we built three [Blossom robots](http://guyhoffman.com/blossom-handcrafted-soft-social-robot/). Check [our github](https://github.com/sarahgillet/blossom-public/wiki) to find European distributors and the changes we made while crafting the robot. Big thanks to [USC Interaction Lab](https://github.com/interaction-lab) for organizing the worldwide workshop on building Blossom robots. 

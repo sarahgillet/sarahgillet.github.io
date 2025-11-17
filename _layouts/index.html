@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="content">
-    {% include pagination-newer.html %}
+    <!--{% include pagination-newer.html %}-->
     <div class="col-xl-12">
     {{ content }}
     </div>
@@ -15,15 +15,34 @@ layout: default
         </div>
     </!--div>
     -->
-    <div class="col-xl-12">
+      <div class="col-xl-12">
         {% if site.posts_on_home > 0 %}
-        <div class="row cards mt-4">
-            {% for post in site.posts limit:site.posts_on_home %}
-            <div class="col-md-4">
-                {% include card.html %}
-            </div>
+        <ul class="post-list list-unstyled mt-4" style="list-style:none;padding-left:0;margin-left:0;">
+            {% for post in site.posts limit:6 %}
+            <li class="mb-3" style="list-style:none;margin-bottom:1.5rem;">
+                <div style="display:flex;align-items:center;gap:1rem;">
+                    <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}" style="flex:0 0 140px; width:140px;">
+                      {{ post.date | date: "%b %d, %Y" }}
+                    </time>
+                    <div style="flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                      {% if post.excerpt %}
+                        {% if post.set_link %}
+                          <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                          {{ post.content | strip_html | truncate:200 }}
+                          </a>
+                        {% else %}
+                          {{ post.excerpt}}
+                        {% endif %}
+                      {% else %}
+                        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                          {{ post.content | strip_html | truncate:200 }}
+                        </a>
+                      {% endif %}
+                    </div>
+                </div>
+            </li>
             {% endfor %}
-        </div>
+        </ul>
         {% endif %}
     </div>
     <!--{% for post in paginator.posts %}
@@ -55,6 +74,6 @@ layout: default
         {% endif %}
       {% endif %}
     </article>
-    {% endfor %}-->
+    {% endfor %}
     {% include pagination-older.html %}
-    </!--div>
+    </!--div>-->

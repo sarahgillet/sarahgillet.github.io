@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Sarah Gillet
 image:            /assets/img/sarah.JPG
 cv:               /assets/pdf/CV_SarahGillet.pdf
-twitter:          https://twitter.com/sarahmgillet
+#twitter:          https://twitter.com/sarahmgillet
 linkedin:         https://www.linkedin.com/in/sarah-gillet-735382138/
 scholar:          https://scholar.google.se/citations?user=tbRSHkIAAAAJ&hl=en
 tagline:          'Sarah Gillet'
@@ -21,7 +21,7 @@ posts_on_home:    3
 
 author:
   name:           'Sarah Gillet'
-  url:            https://twitter.com/sarahmgillet
+#  url:            https://twitter.com/sarahmgillet
 
 paginate:         5
 # paginate_path:    '/page:num'

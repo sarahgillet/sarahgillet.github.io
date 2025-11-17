@@ -8,9 +8,4 @@ title: CV &amp; Contact
 
 ### Contact information
 
-*E-mail*: &nbsp;&nbsp;&nbsp; sgillet(at)kth(dot)se  
-
-*Address*:  
-&nbsp;&nbsp;&nbsp; KTH Royal Institute of Technology  
-&nbsp;&nbsp;&nbsp; Lindstedtsv&auml;gen 24, 4th floor  
-&nbsp;&nbsp;&nbsp; SE-100 44 Stockholm, Sweden
+*E-mail*: &nbsp;&nbsp;&nbsp; sgillet(at)media(dot)mit(dot)edu  

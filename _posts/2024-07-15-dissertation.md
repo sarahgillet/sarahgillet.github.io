@@ -5,6 +5,7 @@ background: /assets/img/thesis.png
 categories: [Posts, News, Robots in Groups]
 layout: news
 description: <p>I defended my thesis titled <em>Computational approaches to interaction-shaping robotics</em>.</p>
+excerpt: I <a href="/posts/news/robots in groups/2024/09/05/dissertation">defended my thesis</a> titled <em>Computational approaches to interaction-shaping robotics</em>.
 ---
 
 On September 5th, 2024, I defended my doctoral thesis titled <em>Computational approaches to interaction-shaping robotics</em>. 
