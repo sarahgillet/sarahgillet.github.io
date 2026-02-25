@@ -11,7 +11,7 @@ linkedin:         https://www.linkedin.com/in/sarah-gillet-735382138/
 scholar:          https://scholar.google.se/citations?user=tbRSHkIAAAAJ&hl=en
 tagline:          'Sarah Gillet'
 description:      'Developing autonomous robots that shape human-human interactions.'
-baseurl:          '/'
+baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
