@@ -8,6 +8,7 @@ pdf:  /assets/pdf/Gillet_Templates_Graphs_HRI2025.pdf
 booktitle: Proceedings of the 20th ACM/IEEE International Conference on Human-Robot Interaction, 2025, Melbourne, Australia
 year: 2025
 conference_short: HRI '25
+url_pub: https://ieeexplore.ieee.org/abstract/document/10973917/
 excerpt: Our paper on <i>Templates and Graph Neural Networks for Social Robots Interacting in Small Groups of Varying Sizes2</i> was accepted to HRI '25. 
 ---
 

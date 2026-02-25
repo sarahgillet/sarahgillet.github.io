@@ -1,15 +1,15 @@
 <div id="sidebar">
   <header>
-      <p><img class="card-img-top-sidebar" src="{{ site.image | relative_url }}"></p>
-    <{% if page.layout == "index" %}h2{% else %}h2{% endif %} class="site-title">
+      <p><!-- img class="card-img-top-sidebar" src="{{ site.image | relative_url }}"--></p>
+    <{% if page.layout == "index" %}h4{% else %}h4{% endif %} class="site-title">
         <a href="{{ "/" | relative_url }}">
             {% unless page.url == "/" %}
             <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
             {% endunless %}
             {{ site.title }}
         </a>
-    </{% if page.layout == "index" %}h2{% else %}h2{% endif %}>
-    <p class="lead">{{ site.description }}</p>
+    </{% if page.layout == "index" %}h3{% else %}h3{% endif %}>
+    <!--p class="lead">{{ site.description }}</p-->
   </header>
   {% include sidebar-nav-links.html %}
 

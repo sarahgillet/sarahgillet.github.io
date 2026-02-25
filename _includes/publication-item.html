@@ -1,24 +1,43 @@
-{{publication.authors}} ({{publication.year}}).
+<div class="pub-item" {% if publication.url_pub %}data-href="{{ publication.url_pub }}"{% elsif publication.pdf %}data-href="{{ publication.pdf }}"{% endif %}>  <div class="pub-main">
+    <span class="pub-authors">{{ publication.authors }}</span>
+    <span class="pub-year">({{ publication.year }})</span>.
     {% if publication.url_pub %}
-<a href={{publication.url_pub}} target="_blank">
-    {% endif %}
-    {{publication.title}}.
-    {% if publication.url_pub %}
-</a>
-    {% endif %}
-    In <i>{{publication.booktitle}}</i>.
-    {% if publication.conference_short %}
-    (<b>{{publication.conference_short}}</b>)
-    {% endif %}
-    {% if publication.pdf %} <a href={{publication.pdf}} target="_blank">PDF</a>{% endif %}
-    {% if publication.bibtex %} <a href={{publication.bibtex}} target="_blank">Bibtex</a>{% endif %}
-    {% if publication.video_description %} <br />{{publication.video_description}}
-<a href={{publication.video}} target="_blank">Video</a>
+    <a href="{{ publication.url_pub }}" target="_blank" class="pub-title">{{ publication.title }}</a>.
     {% else %}
-    {% if publication.video %} <a href={{publication.video}} target="_blank">Video</a>{% endif %}
+    <span class="pub-title">{{ publication.title }}</span>.
     {% endif %}
-    {% if publication.supp_mat_video %} <br /> Supplemental material: <a href={{publication.supp_mat_video}} target="_blank">Video</a>{% endif %}
-    {% if publication.webpage %} <br /> <a href={{publication.webpage}} target="_blank">Link to paper webpage</a>{% endif %}
-    {% if publication.supp_mat %} <br /> Supplemental material: <a href={{publication.supp_mat}} target="_blank">Resources</a>{% endif %}
-    {% if publication.extra %} <br /> {{publication.extra_text}} <a href={{publication.extra}} target="_blank">PDF</a>{% endif %}
-    {% if publication.pre_print %} <br /><a href={{publication.pre_print}} target="_blank">Link to Pre-print</a>{% endif %}
+    In <i>{{ publication.booktitle }}</i>.
+  </div>
+
+  <div class="pub-meta">
+    {% if publication.conference_short %}
+    <span class="pub-badge">{{ publication.conference_short }}</span>
+    {% endif %}
+    {% if publication.pdf %}
+    <a href="{{ publication.pdf }}" target="_blank" class="pub-link">PDF</a>
+    {% endif %}
+    {% if publication.bibtex %}
+    <a href="{{ publication.bibtex }}" target="_blank" class="pub-link">Bibtex</a>
+    {% endif %}
+    {% if publication.video %}
+    <a href="{{ publication.video }}" target="_blank" class="pub-link">
+      {% if publication.video_description %}{{ publication.video_description }}{% else %}Video{% endif %}
+    </a>
+    {% endif %}
+    {% if publication.supp_mat_video %}
+    <a href="{{ publication.supp_mat_video }}" target="_blank" class="pub-link">Supplemental Video</a>
+    {% endif %}
+    {% if publication.webpage %}
+    <a href="{{ publication.webpage }}" target="_blank" class="pub-link">Paper Webpage</a>
+    {% endif %}
+    {% if publication.supp_mat %}
+    <a href="{{ publication.supp_mat }}" target="_blank" class="pub-link">Supplemental Material</a>
+    {% endif %}
+    {% if publication.extra %}
+    <a href="{{ publication.extra }}" target="_blank" class="pub-link">{{ publication.extra_text | default: "Extra" }}</a>
+    {% endif %}
+    {% if publication.pre_print %}
+    <a href="{{ publication.pre_print }}" target="_blank" class="pub-link">Pre-print</a>
+    {% endif %}
+  </div>
+</div>

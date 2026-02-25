@@ -1,70 +1,53 @@
 ---
 layout: page
 ---
-
 {% unless page.content == '' %}
 {{ content }}
 {% endunless %}
 
-
-<h3>Contributions to books</h3>
-
-<ul class="publications-list">
-    {% for publication in site.publications %}
+<div class="pub-section">
+  <div class="pub-section-header">Contributions to Books</div>
+  {% for publication in site.publications %}
     {% if publication.paper_cat == "book" %}
-    <li>
-        {% include publication-item.html %}<br /><br />
-    </li>
+      {% include publication-item.html %}
     {% endif %}
-    {% endfor %}
-</ul>
+  {% endfor %}
+</div>
 
-<h3>Peer-reviewed Journal Publications</h3>
-
-<ul class="publications-list">
-    {% for publication in site.publications %}
+<div class="pub-section">
+  <div class="pub-section-header">Peer-reviewed Journal Publications</div>
+  {% for publication in site.publications %}
     {% if publication.paper_cat == "journal" %}
-    <li>
-        {% include publication-item.html %}<br /><br />
-    </li>
+      {% include publication-item.html %}
     {% endif %}
-    {% endfor %}
-</ul>
+  {% endfor %}
+</div>
 
-<h3>Peer-reviewed Conference Publications</h3>
-
-<ul class="publications-list">
-    {% assign sorted = site.publications | sort: 'date' | reverse %}
-    {% for publication in sorted %}
+<div class="pub-section">
+  <div class="pub-section-header">Peer-reviewed Conference Publications</div>
+  {% assign sorted = site.publications | sort: 'date' | reverse %}
+  {% for publication in sorted %}
     {% if publication.paper_cat == "conference" %}
-    <li>
-        {% include publication-item.html %} <br /><br />
-    </li>
+      {% include publication-item.html %}
     {% endif %}
-    {% endfor %}
-</ul>
+  {% endfor %}
+</div>
 
-<h3>Peer-reviewed Workshop Publications</h3>
-
-<ul class="publications-list">
-    {% assign sorted = site.publications | sort: 'date' | reverse %}
-    {% for publication in sorted %}
+<div class="pub-section">
+  <div class="pub-section-header">Peer-reviewed Workshop Publications</div>
+  {% assign sorted = site.publications | sort: 'date' | reverse %}
+  {% for publication in sorted %}
     {% if publication.paper_cat == "workshop" %}
-    <li>
-        {% include publication-item.html %} <br /><br />
-    </li>
+      {% include publication-item.html %}
     {% endif %}
-    {% endfor %}
-</ul>
+  {% endfor %}
+</div>
 
-<h3>Dissertation/ Ph.D. thesis</h3>
-
-<ul class="publications-list">
-    {% for publication in site.publications %}
+<div class="pub-section">
+  <div class="pub-section-header">Dissertation / Ph.D. Thesis</div>
+  {% for publication in site.publications %}
     {% if publication.paper_cat == "diss" %}
-    <li>
-        {% include publication-item.html %}<br /><br />
-    </li>
+      {% include publication-item.html %}
     {% endif %}
-    {% endfor %}
-</ul>
+  {% endfor %}
+</div>
